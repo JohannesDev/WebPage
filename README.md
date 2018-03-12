@@ -1,6 +1,6 @@
 # WebPage
 ## General
-![alt text](resources/layout.png "The basic layout")
+![alt text](resources/Layout.png "The basic layout")
 
 visit: https://johannesdev.github.io/WebPage/
 
