@@ -16,48 +16,61 @@ html {
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
-/*
-  WAT IS THIS?!
-  We inherit box-sizing: border-box; from our <html> selector
-  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
-*/
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-body {
-  background-image: url("./images/topography.svg"),
-    linear-gradient(110deg, #f93d66, #6d47d9);
-  background-size: 340px, auto;
-  min-height: calc(100vh - 100px);
-  margin: 50px;
-  /* background: white; */
-  background-attachment: fixed;
-  letter-spacing: -1px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 5px 0;
-}
-/* Each item in our grid will contain numbers */
-.item {
-  /* We center the contents of these items. You can also do this with flexbox too! */
+.container{
   display: grid;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
-  border-radius: 3px;
-  font-size: 35px;
-  background-color: var(--yellow); /* best colour */
+  grid-gap: 3rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  justify-items: center;
 }
 
-.item p {
-  margin: 0 0 5px 0;
+.item{
+  background: #FF0342;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
 }
+
+
+.header{
+  background: #55efc4;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.footer{
+  grid-column: 1/-1;
+  width: 100%;
+  background: #444444;
+}
+
+
+
+
+.item1{background-image: url("http://bit.ly/2GosaQh");}
+.item2{background-image: url("https://goo.gl/BJoZF8");}
+.item3{background-image: url("http://bit.ly/2HsoqfQ");}
+.item4{background-image: url("http://bit.ly/2IiFrtU");}
+.item5{background-image: url("http://bit.ly/2FLKa9i");}
+.item6{background-image: url("http://bit.ly/2p7kuJK");}
+.item7{background-image: url("http://bit.ly/2IkRBTf");}
+.item8{background-image: url("http://bit.ly/2p78h8A");}
+.item9{background-image: url("http://bit.ly/2DlGSUS");}
+.item10{background-image: url("http://bit.ly/2FIMq0P");}
+.item11{background-image: url("http://bit.ly/2p8wf2M");}
+.item12{background-image: url("http://bit.ly/2IiFNAK");}
+.item13{background-image: url("http://bit.ly/2IlhZMB");}
+.item14{background-image: url("http://bit.ly/2p4xT62");}
+.item15{background-image: url("http://bit.ly/2IkasxO");}
+.item16{background-image: url("http://bit.ly/2Fva6GF");}
+.item17{background-image: url("http://bit.ly/2p9mHnR");}
+.item18{background-image: url("http://bit.ly/2Djj8AB");}
+.item19{background-image: url("http://bit.ly/2Dm8Ek2");}
+.item20{background-image: url("http://bit.ly/2tJ4tiy");}
