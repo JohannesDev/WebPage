@@ -4,7 +4,7 @@
   --black: #272727;
 }
 
-html {
+html{
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
   /* A system font stack so things load nice and quick! */
@@ -22,11 +22,18 @@ html {
   box-sizing: inherit;
 }
 
+
+
+
+
+
+
 .container{
   display: grid;
+
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   grid-gap: 3rem;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   justify-items: center;
 }
 
@@ -37,6 +44,10 @@ html {
   background-size: cover;
   background-position: center;
 }
+
+
+
+
 
 
 .header{
